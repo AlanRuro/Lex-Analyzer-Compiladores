@@ -27,11 +27,13 @@ p                      	{ printf("print "); }
 int main(int argc, char* argv[]) {
 	if(argc > 1) {
 		FILE *fp = fopen(argv[1], "r");
-		if(fp)
+		if(fp) {
 			yyin = fp;
-		else
+		}
+		else {
 			perror(argv[1]);
 			return 1;
+		}
 	}
 	yylex();
 	printf("\n");
