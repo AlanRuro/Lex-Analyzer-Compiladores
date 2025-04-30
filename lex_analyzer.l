@@ -29,7 +29,11 @@ int main(int argc, char* argv[]) {
 		FILE *fp = fopen(argv[1], "r");
 		if(fp)
 			yyin = fp;
+		else
+			perror(argv[1]);
+			return 1;
 	}
 	yylex();
+	printf("\n");
 	return 0;
 }
