@@ -78,3 +78,6 @@ The analyzer also handles:
 - Whitespace and tabs (ignored)
 - Any other characters (ignored)
 
+# Author
+Alan Antonio Ruelas Robles
+
