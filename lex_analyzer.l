@@ -31,5 +31,5 @@ int main(int argc, char* argv[]) {
 			yyin = fp;
 	}
 	yylex();
-	return 1;
+	return 0;
 }
